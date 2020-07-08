@@ -63,3 +63,6 @@ $media-bp-4k: 3840px;
 
 @include "~media-query-breakpoints";
 ``` 
+
+### License: 
+MIT
