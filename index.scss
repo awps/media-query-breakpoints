@@ -1,0 +1,81 @@
+$media-bp-phone: 480px !default;
+$media-bp-tablet: 768px !default;
+$media-bp-notebook: 1024px !default;
+$media-bp-monitor: 1280px !default;
+$media-bp-2k: 1920px !default;
+$media-bp-4k: 3840px !default;
+
+// Media query mixins UP
+// ----------------------------------------------------------------------------
+@mixin for-phone-up() {
+    @media(min-width: $media-bp-phone) {
+        @content;
+    }
+}
+
+@mixin for-tablet-up() {
+    @media(min-width: $media-bp-tablet) {
+        @content;
+    }
+}
+
+@mixin for-notebook-up() {
+    @media(min-width: $media-bp-notebook) {
+        @content;
+    }
+}
+
+@mixin for-monitor-up() {
+    @media(min-width: $media-bp-monitor) {
+        @content;
+    }
+}
+
+@mixin for-2k-up(){
+    @media(min-width: $media-bp-2k) {
+        @content;
+    }
+}
+
+@mixin for-4k-up(){
+    @media(min-width: $media-bp-4k) {
+        @content;
+    }
+}
+// Media query mixins DOWN
+// ----------------------------------------------------------------------------
+@mixin for-phone-down() {
+    @media(max-width: $media-bp-phone) {
+        @content;
+    }
+}
+
+@mixin for-tablet-down() {
+    @media(max-width: $media-bp-tablet) {
+        @content;
+    }
+}
+
+@mixin for-notebook-down() {
+    @media(max-width: $media-bp-notebook) {
+        @content;
+    }
+}
+
+@mixin for-monitor-down() {
+    @media(max-width: $media-bp-monitor) {
+        @content;
+    }
+}
+
+@mixin for-2k-down(){
+    @media(max-width: $media-bp-2k) {
+        @content;
+    }
+}
+
+@mixin for-4k-down(){
+    @media(max-width: $media-bp-4k) {
+        @content;
+    }
+}
